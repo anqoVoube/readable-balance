@@ -8,7 +8,7 @@ class ReadableBalance:
         self.return_balance = format(self.balance, format_length)
         return self
 
-    def dots(self):
+    def commas(self):
         if self.return_balance.find('.') != -1:
             int_decimal_sep =  self.return_balance.split('.')
             value_wout_decimals = int(int_decimal_sep[0])
